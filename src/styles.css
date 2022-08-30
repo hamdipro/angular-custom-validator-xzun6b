@@ -1,0 +1,7 @@
+/* Add application styles & imports to this file! */
+input.ng-touched.ng-invalid {
+    border-color:red;
+}
+.validation-error {
+    color : red;
+}

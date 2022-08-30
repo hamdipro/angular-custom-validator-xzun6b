@@ -1,0 +1,12 @@
+<div class="container">
+	<form [formGroup]="form">
+		<div class="form-group">
+			<input formControlName="version" class="form-control" placeholder="Enter version">
+			<div *ngIf="version.invalid && version.touched" class="validation-error">
+				<div *ngIf="version.errors.required">version is required.</div>
+				<div *ngIf="version.errors.invalidVersion">This field must be a version field</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
